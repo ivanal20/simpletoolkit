@@ -129,5 +129,15 @@ namespace simpletoolkit.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Windows_loading_cargando_ezgif_com_speed {
+            get {
+                object obj = ResourceManager.GetObject("Windows-loading-cargando-ezgif.com-speed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -77,7 +77,7 @@ namespace simpletoolkit
 
         private void frmLoginUI_Load(object sender, EventArgs e)
         {
-            scrLogin scrLogin = new scrLogin();
+            scrLoginSuccess scrLogin = new scrLoginSuccess();
             pnlContent.Controls.Clear();
             pnlContent.Controls.Add(scrLogin);
             scrLogin.Dock = DockStyle.Fill;
