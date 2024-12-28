@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLoginUI));
             this.pnlBlur = new System.Windows.Forms.Panel();
-            this.btnRegisterChangeScr = new System.Windows.Forms.Button();
             this.pnlContent = new System.Windows.Forms.Panel();
             this.btnLoginChangeScr = new System.Windows.Forms.Button();
+            this.btnRegisterChangeScr = new System.Windows.Forms.Button();
             this.pnlBlur.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,30 +49,12 @@
             this.pnlBlur.Size = new System.Drawing.Size(897, 526);
             this.pnlBlur.TabIndex = 0;
             // 
-            // btnRegisterChangeScr
-            // 
-            this.btnRegisterChangeScr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnRegisterChangeScr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnRegisterChangeScr.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnRegisterChangeScr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnRegisterChangeScr.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnRegisterChangeScr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegisterChangeScr.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegisterChangeScr.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnRegisterChangeScr.Image = global::simpletoolkit.Properties.Resources.adduser;
-            this.btnRegisterChangeScr.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegisterChangeScr.Location = new System.Drawing.Point(0, 470);
-            this.btnRegisterChangeScr.Name = "btnRegisterChangeScr";
-            this.btnRegisterChangeScr.Size = new System.Drawing.Size(162, 56);
-            this.btnRegisterChangeScr.TabIndex = 3;
-            this.btnRegisterChangeScr.Text = "Регистрация";
-            this.btnRegisterChangeScr.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRegisterChangeScr.UseVisualStyleBackColor = false;
-            // 
             // pnlContent
             // 
+            this.pnlContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pnlContent.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlContent.Location = new System.Drawing.Point(162, 0);
             this.pnlContent.Name = "pnlContent";
             this.pnlContent.Size = new System.Drawing.Size(735, 526);
@@ -97,6 +79,27 @@
             this.btnLoginChangeScr.Text = "Вход";
             this.btnLoginChangeScr.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLoginChangeScr.UseVisualStyleBackColor = false;
+            this.btnLoginChangeScr.Click += new System.EventHandler(this.btnLoginChangeScr_Click);
+            // 
+            // btnRegisterChangeScr
+            // 
+            this.btnRegisterChangeScr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnRegisterChangeScr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnRegisterChangeScr.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRegisterChangeScr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRegisterChangeScr.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnRegisterChangeScr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegisterChangeScr.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegisterChangeScr.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnRegisterChangeScr.Image = global::simpletoolkit.Properties.Resources.adduser;
+            this.btnRegisterChangeScr.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegisterChangeScr.Location = new System.Drawing.Point(0, 470);
+            this.btnRegisterChangeScr.Name = "btnRegisterChangeScr";
+            this.btnRegisterChangeScr.Size = new System.Drawing.Size(162, 56);
+            this.btnRegisterChangeScr.TabIndex = 3;
+            this.btnRegisterChangeScr.Text = "Регистрация";
+            this.btnRegisterChangeScr.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegisterChangeScr.UseVisualStyleBackColor = false;
             // 
             // frmLoginUI
             // 

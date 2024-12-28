@@ -81,6 +81,14 @@ namespace simpletoolkit
             pnlContent.Controls.Clear();
             pnlContent.Controls.Add(scrLogin);
             scrLogin.Dock = DockStyle.Fill;
+            scrLogin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+        }
+
+        private void btnLoginChangeScr_Click(object sender, EventArgs e)
+        {
+            scrLogin scrLogin = new scrLogin();
+            pnlContent.Controls.Clear();
+            pnlContent.Controls.Add(scrLogin);
         }
     }
 }

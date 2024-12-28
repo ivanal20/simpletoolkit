@@ -142,13 +142,14 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="lang\ru_ru.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ru_ru.resx</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="scrLoginSuccess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scrLoginSuccess.Designer.cs">
+      <DependentUpon>scrLoginSuccess.cs</DependentUpon>
+    </Compile>
     <Compile Include="scrLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -161,10 +162,6 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="lang\ru_ru.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ru_ru.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -176,6 +173,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="scrLoginSuccess.resx">
+      <DependentUpon>scrLoginSuccess.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="scrLogin.resx">
       <DependentUpon>scrLogin.cs</DependentUpon>
     </EmbeddedResource>
