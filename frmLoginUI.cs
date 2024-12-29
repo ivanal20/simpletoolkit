@@ -77,7 +77,7 @@ namespace simpletoolkit
 
         private void frmLoginUI_Load(object sender, EventArgs e)
         {
-            scrLoginSuccess scrLogin = new scrLoginSuccess();
+            scrLogin scrLogin = new scrLogin();
             pnlContent.Controls.Clear();
             pnlContent.Controls.Add(scrLogin);
             scrLogin.Dock = DockStyle.Fill;
@@ -89,6 +89,13 @@ namespace simpletoolkit
             scrLogin scrLogin = new scrLogin();
             pnlContent.Controls.Clear();
             pnlContent.Controls.Add(scrLogin);
+        }
+
+        private void btnRegisterChangeScr_Click(object sender, EventArgs e)
+        {
+            scrRegister scrRegister = new scrRegister();
+            pnlContent.Controls.Clear();
+            pnlContent.Controls.Add(scrRegister);
         }
     }
 }

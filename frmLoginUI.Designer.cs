@@ -100,6 +100,7 @@
             this.btnRegisterChangeScr.Text = "Регистрация";
             this.btnRegisterChangeScr.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRegisterChangeScr.UseVisualStyleBackColor = false;
+            this.btnRegisterChangeScr.Click += new System.EventHandler(this.btnRegisterChangeScr_Click);
             // 
             // frmLoginUI
             // 
@@ -125,7 +126,7 @@
         private System.Windows.Forms.Panel pnlBlur;
         private System.Windows.Forms.Button btnLoginChangeScr;
         private System.Windows.Forms.Button btnRegisterChangeScr;
-        private System.Windows.Forms.Panel pnlContent;
+        public System.Windows.Forms.Panel pnlContent;
         //private CustomMetroTextBox customMetroTextBox1;
     }
 }
