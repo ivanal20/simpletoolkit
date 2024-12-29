@@ -17,8 +17,9 @@ namespace simpletoolkit
         // Конфигурация
         private readonly string GitHubApiUrl = "https://api.github.com/repos/ivanal20/pocket-m-i-mc/contents/auth_edu/users.txt";
         private readonly string GitHubToken = "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"; // Токен
-        frmLoginUI frmLoginUI;
-        scrLoginSuccess scrLoginSuccess;
+        frmLoginUI frmLoginUI = new frmLoginUI();
+        //frmLoginUi.pnlContent pnlContent;
+        scrLoginSuccess scrLoginSuccess = new scrLoginSuccess();
         public scrLogin()
         {
             InitializeComponent();
@@ -31,8 +32,8 @@ namespace simpletoolkit
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text.Trim();
-            string password = txtPassword.Text.Trim();
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
@@ -50,6 +51,8 @@ namespace simpletoolkit
                 {
                     frmLoginUI.pnlContent.Controls.Clear();
                     frmLoginUI.pnlContent.Controls.Add(scrLoginSuccess);
+                    scrLoginSuccess.Dock = DockStyle.Fill;
+                    scrLoginSuccess.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
                 }
                 else
                 {
