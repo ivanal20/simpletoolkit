@@ -15,8 +15,8 @@ namespace simpletoolkit
         //String[] loadingAnim = [ "","","","","","","","" ];
         int currentChar;
         int counter = 0;
-        frmLoginUI frmLoginUI;
-        frmMain frmMain;
+        frmLoginUI frmLoginUI = new frmLoginUI();
+        frmMain frmMain = new frmMain();
         public scrLoginSuccess()
         {
             InitializeComponent();

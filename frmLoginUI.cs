@@ -97,5 +97,15 @@ namespace simpletoolkit
             pnlContent.Controls.Clear();
             pnlContent.Controls.Add(scrRegister);
         }
+
+        public void addScrLoginSuccess()
+        {
+            scrLoginSuccess scrLoginSuccess = new scrLoginSuccess();
+            pnlContent.Controls.Clear();
+            pnlContent.Controls.Add(scrLoginSuccess);
+            scrLoginSuccess.Dock = DockStyle.Fill;
+            scrLoginSuccess.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+        }
+
     }
 }

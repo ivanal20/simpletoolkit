@@ -49,10 +49,11 @@ namespace simpletoolkit
                 // Проверяем данные пользователя
                 if (fileContent.Contains($"{username} {password}"))
                 {
-                    frmLoginUI.pnlContent.Controls.Clear();
+                    /*frmLoginUI.pnlContent.Controls.Clear();
                     frmLoginUI.pnlContent.Controls.Add(scrLoginSuccess);
                     scrLoginSuccess.Dock = DockStyle.Fill;
-                    scrLoginSuccess.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+                    scrLoginSuccess.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;*/
+                    frmLoginUI.addScrLoginSuccess();
                 }
                 else
                 {

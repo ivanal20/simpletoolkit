@@ -157,7 +157,7 @@
             // 
             this.lblMessage.AutoSize = true;
             this.lblMessage.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lblMessage.Location = new System.Drawing.Point(485, 400);
+            this.lblMessage.Location = new System.Drawing.Point(100, 400);
             this.lblMessage.Name = "lblMessage";
             this.lblMessage.Size = new System.Drawing.Size(0, 13);
             this.lblMessage.TabIndex = 13;
