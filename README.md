@@ -10,7 +10,7 @@ Only WinForms, no WPF
 - MetroFramework
 - AeroWizard
 ## Functions
-Coming soon
+Coming soon\
 Authorization is required to use the program (registration of a new account is present in the program)
 
 Enjoy!
