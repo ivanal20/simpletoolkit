@@ -100,11 +100,11 @@ namespace simpletoolkit
 
         public void addScrLoginSuccess()
         {
-            scrLoginSuccess scrLoginSuccess = new scrLoginSuccess();
+            scrLoginSuccess scrLoginSuccess1 = new scrLoginSuccess();
             pnlContent.Controls.Clear();
-            pnlContent.Controls.Add(scrLoginSuccess);
-            scrLoginSuccess.Dock = DockStyle.Fill;
-            scrLoginSuccess.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnlContent.Controls.Add(scrLoginSuccess1);
+            scrLoginSuccess1.Dock = DockStyle.Fill;
+            scrLoginSuccess1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
         }
 
     }

@@ -35,7 +35,7 @@
             this.txtPassword = new MetroFramework.Controls.MetroTextBox();
             this.lblMessage = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.txtRepeatPassword = new MetroFramework.Controls.MetroTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,9 +51,9 @@
             this.btnExitR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExitR.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExitR.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnExitR.Location = new System.Drawing.Point(545, 478);
+            this.btnExitR.Location = new System.Drawing.Point(511, 478);
             this.btnExitR.Name = "btnExitR";
-            this.btnExitR.Size = new System.Drawing.Size(64, 24);
+            this.btnExitR.Size = new System.Drawing.Size(133, 24);
             this.btnExitR.TabIndex = 7;
             this.btnExitR.Text = "Выход";
             this.btnExitR.UseVisualStyleBackColor = false;
@@ -71,11 +71,11 @@
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnRegister.Location = new System.Drawing.Point(545, 450);
+            this.btnRegister.Location = new System.Drawing.Point(511, 450);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(64, 24);
+            this.btnRegister.Size = new System.Drawing.Size(133, 24);
             this.btnRegister.TabIndex = 6;
-            this.btnRegister.Text = "Войти";
+            this.btnRegister.Text = "Зарегистрироваться";
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
@@ -190,50 +190,50 @@
             this.label1.Text = "Регистрация";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // metroTextBox1
+            // txtRepeatPassword
             // 
-            this.metroTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.txtRepeatPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             // 
             // 
             // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(172, 2);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(15, 15);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(484, 403);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '●';
-            this.metroTextBox1.PromptText = "Повторите пароль";
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(190, 20);
-            this.metroTextBox1.Style = MetroFramework.MetroColorStyle.White;
-            this.metroTextBox1.TabIndex = 15;
-            this.metroTextBox1.UseCustomBackColor = true;
-            this.metroTextBox1.UseCustomForeColor = true;
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.UseSystemPasswordChar = true;
-            this.metroTextBox1.WaterMark = "Повторите пароль";
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtRepeatPassword.CustomButton.Image = null;
+            this.txtRepeatPassword.CustomButton.Location = new System.Drawing.Point(172, 2);
+            this.txtRepeatPassword.CustomButton.Name = "";
+            this.txtRepeatPassword.CustomButton.Size = new System.Drawing.Size(15, 15);
+            this.txtRepeatPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtRepeatPassword.CustomButton.TabIndex = 1;
+            this.txtRepeatPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtRepeatPassword.CustomButton.UseSelectable = true;
+            this.txtRepeatPassword.CustomButton.Visible = false;
+            this.txtRepeatPassword.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.txtRepeatPassword.Lines = new string[0];
+            this.txtRepeatPassword.Location = new System.Drawing.Point(484, 403);
+            this.txtRepeatPassword.MaxLength = 32767;
+            this.txtRepeatPassword.Name = "txtRepeatPassword";
+            this.txtRepeatPassword.PasswordChar = '●';
+            this.txtRepeatPassword.PromptText = "Повторите пароль";
+            this.txtRepeatPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtRepeatPassword.SelectedText = "";
+            this.txtRepeatPassword.SelectionLength = 0;
+            this.txtRepeatPassword.SelectionStart = 0;
+            this.txtRepeatPassword.ShortcutsEnabled = true;
+            this.txtRepeatPassword.Size = new System.Drawing.Size(190, 20);
+            this.txtRepeatPassword.Style = MetroFramework.MetroColorStyle.White;
+            this.txtRepeatPassword.TabIndex = 15;
+            this.txtRepeatPassword.UseCustomBackColor = true;
+            this.txtRepeatPassword.UseCustomForeColor = true;
+            this.txtRepeatPassword.UseSelectable = true;
+            this.txtRepeatPassword.UseSystemPasswordChar = true;
+            this.txtRepeatPassword.WaterMark = "Повторите пароль";
+            this.txtRepeatPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtRepeatPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // scrRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.metroTextBox1);
+            this.Controls.Add(this.txtRepeatPassword);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.txtPassword);
@@ -258,6 +258,6 @@
         private MetroFramework.Controls.MetroTextBox txtPassword;
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Label label1;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroTextBox txtRepeatPassword;
     }
 }

@@ -16,7 +16,7 @@ namespace simpletoolkit
     {
         // Конфигурация
         private readonly string GitHubApiUrl = "https://api.github.com/repos/ivanal20/pocket-m-i-mc/contents/auth_edu/users.txt";
-        private readonly string GitHubToken = "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"; // Токен
+        private readonly string GitHubToken = "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"; // Токен
         frmLoginUI frmLoginUI = new frmLoginUI();
         //frmLoginUi.pnlContent pnlContent;
         scrLoginSuccess scrLoginSuccess = new scrLoginSuccess();
@@ -32,8 +32,9 @@ namespace simpletoolkit
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
-            string password = txtPassword.Text;
+            lblMessage.Text = string.Empty;
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text.Trim();
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
@@ -54,6 +55,7 @@ namespace simpletoolkit
                     scrLoginSuccess.Dock = DockStyle.Fill;
                     scrLoginSuccess.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;*/
                     frmLoginUI.addScrLoginSuccess();
+                    lblMessage.Text = "Кнопка входа была нажата";
                 }
                 else
                 {

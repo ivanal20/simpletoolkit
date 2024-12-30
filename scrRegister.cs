@@ -16,7 +16,7 @@ namespace simpletoolkit
     {
         // Конфигурация
         private readonly string GitHubApiUrl = "https://api.github.com/repos/ivanal20/pocket-m-i-mc/contents/auth_edu/users.txt";
-        private readonly string GitHubToken = "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"; // Токен
+        private readonly string GitHubToken = "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"; // Токен
         frmLoginUI frmLoginUI;
         scrLoginSuccess scrLoginSuccess;
         public scrRegister()
@@ -33,10 +33,17 @@ namespace simpletoolkit
         {
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text.Trim();
+            string repeat_password = txtRepeatPassword.Text.Trim();
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 lblMessage.Text = "Введите имя пользователя и пароль.";
+                return;
+            }
+
+            if (!password.Equals(repeat_password)) 
+            {
+                lblMessage.Text = "Пароли не совпадают";
                 return;
             }
 
