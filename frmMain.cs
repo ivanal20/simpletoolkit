@@ -62,12 +62,13 @@ namespace simpletoolkit
         {
             if (!Properties.Settings.Default.isLoggedIn == true)
             {
-                metroTile1.BackColor = LightenColor(accColor(), 30);
+                wingetGuiTile.BackColor = LightenColor(accColor(), 30);
                 this.Hide();
                 frmLogin.Show();
             }
             else
             {
+                wingetGuiTile.BackColor = LightenColor(accColor(), 30);
                 frmLogin.Close();
             }
             //counter++;
