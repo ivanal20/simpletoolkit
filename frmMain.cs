@@ -15,6 +15,7 @@ namespace simpletoolkit
     public partial class frmMain : Form
     {
         frmLoginUI frmLogin = new frmLoginUI();
+        public int counter = 0;
         public frmMain()
         {
             InitializeComponent();
@@ -59,9 +60,17 @@ namespace simpletoolkit
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            metroTile1.BackColor = LightenColor(accColor(), 30);
-            this.Hide();
-            frmLogin.Show();
+            if (!Properties.Settings.Default.isLoggedIn == true)
+            {
+                metroTile1.BackColor = LightenColor(accColor(), 30);
+                this.Hide();
+                frmLogin.Show();
+            }
+            else
+            {
+                frmLogin.Close();
+            }
+            //counter++;
         }
     }
 }

@@ -13,9 +13,9 @@ using Microsoft.Win32;
 
 namespace simpletoolkit
 {
-    public partial class frmLoginUI : Form
+    public partial class frmLoginSuccess : Form
     {
-        public frmLoginUI()
+        public frmLoginSuccess()
         {
             InitializeComponent();
             this.BackColor = accColor();
@@ -77,18 +77,19 @@ namespace simpletoolkit
 
         private void frmLoginUI_Load(object sender, EventArgs e)
         {
-            scrLogin scrLogin = new scrLogin();
-            pnlContent.Controls.Clear();
-            pnlContent.Controls.Add(scrLogin);
-            scrLogin.Dock = DockStyle.Fill;
-            scrLogin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            scrLoginSuccess scrLogin = new scrLoginSuccess();
+            //.Controls.Clear();
+            this.Controls.Add(scrLogin);
+            //scrLogin.Dock = DockStyle.Fill;
+            //.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            scrLogin.Location = new Point(3, 0);
         }
 
-        private void btnLoginChangeScr_Click(object sender, EventArgs e)
+        /*private void btnLoginChangeScr_Click(object sender, EventArgs e)
         {
-            scrLogin scrLogin = new scrLogin();
-            pnlContent.Controls.Clear();
-            pnlContent.Controls.Add(scrLogin);
+            //scrLogin scrLogin = new scrLogin();
+            //pnlContent.Controls.Clear();
+            //pnlContent.Controls.Add(scrLogin);
         }
 
         private void btnRegisterChangeScr_Click(object sender, EventArgs e)
@@ -98,7 +99,7 @@ namespace simpletoolkit
             pnlContent.Controls.Add(scrRegister);
         }
 
-        /*public void addScrLoginSuccess()
+        public void addScrLoginSuccess()
         {
             scrLoginSuccess scrLoginSuccess1 = new scrLoginSuccess();
             pnlContent.Controls.Clear();

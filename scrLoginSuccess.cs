@@ -31,6 +31,7 @@ namespace simpletoolkit
         {
             currentChar = 0xE052;
             timer1.Start();
+            label1.Text = Properties.Settings.Default.username;
         }
 
         private void timer1_Tick(object sender, EventArgs e)

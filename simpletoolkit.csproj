@@ -130,6 +130,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmLoginSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginSuccess.Designer.cs">
+      <DependentUpon>frmLoginSuccess.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLoginUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     <Compile Include="scrLogin.Designer.cs">
       <DependentUpon>scrLogin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmLoginSuccess.resx">
+      <DependentUpon>frmLoginSuccess.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLoginUI.resx">
       <DependentUpon>frmLoginUI.cs</DependentUpon>
     </EmbeddedResource>

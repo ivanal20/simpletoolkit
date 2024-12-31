@@ -16,8 +16,16 @@ namespace simpletoolkit
     {
         // Конфигурация
         private readonly string GitHubApiUrl = "https://api.github.com/repos/ivanal20/pocket-m-i-mc/contents/auth_edu/users.txt";
-        private readonly string GitHubToken = Encoding.UTF8.GetString(Convert.FromBase64String("Z2hwX0dObkhmUzBTOTNHMkM5VU80bmJSUG41MHpPdjJISzB5SW5lSg==")); // Токен
+        private readonly string GitHubToken = Encoding.UTF8.GetString(Convert.FromBase64String("Z2l0aHViX3BhdF8xMUE0R1BBR1kwQ09GWWxLeEF4Wnl0XzJ1bjlyWmhLS21HQ24yQ0xOUDlocVRQNmNHd3dxSkc2TDlmUnZydEhBZWUzQUZCWlZYRTVVRld3S3Ns")); // Токен
         frmLoginUI frmLoginUI = new frmLoginUI();
+        frmMain frmMain = new frmMain();
+        //var settings = new PublicSettings();
+        //private static bool _isLoggedIn = false;
+        //public static bool IsLoggedIn
+        //{
+        //    get { return _isLoggedIn; }
+        //    //set { _isLoggedIn = value; }
+        //}
         //frmLoginUi.pnlContent pnlContent;
         scrLoginSuccess scrLoginSuccess = new scrLoginSuccess();
         public scrLogin()
@@ -54,8 +62,14 @@ namespace simpletoolkit
                     frmLoginUI.pnlContent.Controls.Add(scrLoginSuccess);
                     scrLoginSuccess.Dock = DockStyle.Fill;
                     scrLoginSuccess.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;*/
-                    frmLoginUI.addScrLoginSuccess();
-                    lblMessage.Text = "Кнопка входа была нажата";
+                    //_isLoggedIn = true;
+                    Properties.Settings.Default.isLoggedIn = true;
+                    Properties.Settings.Default.username = username;
+                    Properties.Settings.Default.password = password;
+                    Properties.Settings.Default.Save();
+                    frmLoginUI.Close();
+                    frmMain.Show();
+                    //lblMessage.Text = "Кнопка входа была нажата";
                 }
                 else
                 {
