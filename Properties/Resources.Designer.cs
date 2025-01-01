@@ -73,9 +73,39 @@ namespace simpletoolkit.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Back_Arrow {
+            get {
+                object obj = ResourceManager.GetObject("Back Arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Back_Arrow1 {
+            get {
+                object obj = ResourceManager.GetObject("Back Arrow1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DefaultAccountTile {
             get {
                 object obj = ResourceManager.GetObject("DefaultAccountTile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_стрелка_влево_в_круге_2_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-стрелка-влево-в-круге-2-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +126,26 @@ namespace simpletoolkit.Properties {
         internal static System.Drawing.Bitmap show_password_icon {
             get {
                 object obj = ResourceManager.GetObject("show_password_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Toggle_Off {
+            get {
+                object obj = ResourceManager.GetObject("Toggle Off", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Toggle_On {
+            get {
+                object obj = ResourceManager.GetObject("Toggle On", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
