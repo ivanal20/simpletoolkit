@@ -148,12 +148,6 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmWingetGUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmWingetGUI.Designer.cs">
-      <DependentUpon>frmWingetGUI.cs</DependentUpon>
-    </Compile>
     <Compile Include="metroSwitch.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -188,9 +182,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmWingetGUI.resx">
-      <DependentUpon>frmWingetGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="metroSwitch.resx">
       <DependentUpon>metroSwitch.cs</DependentUpon>
@@ -261,6 +252,7 @@
   <ItemGroup>
     <None Include="img\icons8-стрелка-влево-в-круге-2-100.png" />
     <None Include="img\Back Arrow.png" />
+    <None Include="img\Binary Code.png" />
     <Content Include="img\Logout.png" />
     <Content Include="img\Settings.png" />
     <Content Include="img\Toggle Off.png" />

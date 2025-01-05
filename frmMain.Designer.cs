@@ -61,10 +61,11 @@
             // 
             // pnlProfileMenu
             // 
+            this.pnlProfileMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlProfileMenu.BackColor = System.Drawing.Color.DarkCyan;
             this.pnlProfileMenu.Controls.Add(this.button3);
             this.pnlProfileMenu.Controls.Add(this.button2);
-            this.pnlProfileMenu.Location = new System.Drawing.Point(687, 83);
+            this.pnlProfileMenu.Location = new System.Drawing.Point(687, 101);
             this.pnlProfileMenu.Name = "pnlProfileMenu";
             this.pnlProfileMenu.Size = new System.Drawing.Size(106, 80);
             this.pnlProfileMenu.TabIndex = 3;
@@ -75,7 +76,7 @@
             this.button3.BackColor = System.Drawing.Color.DarkCyan;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.ImageKey = "Logout.png";
@@ -84,9 +85,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(106, 37);
             this.button3.TabIndex = 4;
-            this.button3.Text = "username";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.Text = "Выйти из\r\nаккаунта";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -108,6 +109,7 @@
             // 
             // btnProfileMenu
             // 
+            this.btnProfileMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnProfileMenu.BackColor = System.Drawing.Color.DarkCyan;
             this.btnProfileMenu.FlatAppearance.BorderSize = 0;
             this.btnProfileMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -116,7 +118,7 @@
             this.btnProfileMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProfileMenu.ImageKey = "DefaultAccountTile.png";
             this.btnProfileMenu.ImageList = this.resizedImgList1;
-            this.btnProfileMenu.Location = new System.Drawing.Point(687, 46);
+            this.btnProfileMenu.Location = new System.Drawing.Point(687, 64);
             this.btnProfileMenu.Name = "btnProfileMenu";
             this.btnProfileMenu.Size = new System.Drawing.Size(106, 37);
             this.btnProfileMenu.TabIndex = 2;
@@ -131,10 +133,10 @@
             this.wingetGuiTile.BackColor = System.Drawing.Color.LightSeaGreen;
             this.wingetGuiTile.Location = new System.Drawing.Point(85, 146);
             this.wingetGuiTile.Name = "wingetGuiTile";
-            this.wingetGuiTile.Size = new System.Drawing.Size(192, 96);
+            this.wingetGuiTile.Size = new System.Drawing.Size(125, 96);
             this.wingetGuiTile.TabIndex = 0;
-            this.wingetGuiTile.Text = "Winget GUI";
-            this.wingetGuiTile.TileImage = global::simpletoolkit.Properties.Resources.wingetgui;
+            this.wingetGuiTile.Text = "Шифровальщик данных";
+            this.wingetGuiTile.TileImage = global::simpletoolkit.Properties.Resources.Binary_Code;
             this.wingetGuiTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.wingetGuiTile.UseCustomBackColor = true;
             this.wingetGuiTile.UseSelectable = true;

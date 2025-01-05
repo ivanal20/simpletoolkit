@@ -76,7 +76,15 @@ namespace simpletoolkit
 
         private void btnProfileMenu_Click(object sender, EventArgs e)
         {
+            pnlProfileMenu.Visible = !pnlProfileMenu.Visible;
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.isLoggedIn = false;
+            Properties.Settings.Default.username = "";
+            Properties.Settings.Default.password = "";
+            Properties.Settings.Default.Save();
         }
     }
 }

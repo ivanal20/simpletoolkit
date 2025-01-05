@@ -16,7 +16,7 @@ namespace simpletoolkit
     {
         // Конфигурация
         private readonly string GitHubApiUrl = "https://api.github.com/repos/ivanal20/pocket-m-i-mc/contents/auth_edu/users.txt";
-        private readonly string GitHubToken = Encoding.UTF8.GetString(Convert.FromBase64String("Z2l0aHViX3BhdF8xMUE0R1BBR1kwQ09GWWxLeEF4Wnl0XzJ1bjlyWmhLS21HQ24yQ0xOUDlocVRQNmNHd3dxSkc2TDlmUnZydEhBZWUzQUZCWlZYRTVVRld3S3Ns")); // Токен
+        private readonly string GitHubToken = Encoding.UTF8.GetString(Convert.FromBase64String("Z2l0aHViX3BhdF8xMUE0R1BBR1kwSWFnVjB5ZmpLdzlmX0dwUkZjWDR4RHNmMUszMUJmTTJraERXdXo1ZExCTld5NlVBSEpWVUh4OWJDV04zSU9HM3pLbGhldEM0")); // Токен
         frmLoginUI frmLoginUI = new frmLoginUI();
         frmMain frmMain = new frmMain();
         //var settings = new PublicSettings();
